@@ -2,7 +2,7 @@
 
 A fully responsive, modern, and beginner-friendly Quiz Application built using HTML, CSS, and JavaScript, with full quiz creation, user login, score history, and localStorage support.
 
-⭐ Features (Bullet Points)
+⭐ Features 
 🔐 User Account System
 
 Register new users

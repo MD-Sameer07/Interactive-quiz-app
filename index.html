@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive Quiz App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>QuizLab</h1>
+    <nav aria-label="Primary">
+      <button id="nav-create" class="nav-btn">Create Quiz</button>
+      <button id="nav-play" class="nav-btn">Take Quiz</button>
+      <button id="nav-score" class="nav-btn">Scores</button>
+      <button id="nav-account" class="nav-btn">Account</button>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- Account / Auth -->
+    <section id="account-section" class="panel" aria-labelledby="account-title">
+      <h2 id="account-title">Account</h2>
+
+      <div id="auth-forms">
+        <form id="register-form" aria-label="Register" class="auth-form">
+          <h3>Create account</h3>
+          <label>
+            Name
+            <input id="reg-name" required />
+          </label>
+          <label>
+            Email
+            <input id="reg-email" type="email" required />
+          </label>
+          <label>
+            Password
+            <input id="reg-password" type="password" required minlength="6"/>
+          </label>
+          <button type="submit">Register</button>
+        </form>
+
+        <form id="login-form" aria-label="Login" class="auth-form">
+          <h3>Login</h3>
+          <label>
+            Email
+            <input id="login-email" type="email" required />
+          </label>
+          <label>
+            Password
+            <input id="login-password" type="password" required />
+          </label>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+      <div id="account-info" class="hidden">
+        <p>Welcome, <span id="user-name"></span> (<span id="user-email"></span>)</p>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </section>
+
+    <!-- Create Quiz -->
+    <section id="create-section" class="panel hidden" aria-labelledby="create-title">
+      <h2 id="create-title">Create Quiz</h2>
+      <form id="quiz-meta-form">
+        <label>
+          Quiz Title
+          <input id="quiz-title" required />
+        </label>
+        <label>
+          Description
+          <input id="quiz-desc" />
+        </label>
+        <label>
+          Time limit (minutes, optional)
+          <input id="quiz-time" type="number" min="0" />
+        </label>
+        <button id="start-adding" type="button">Start Adding Questions</button>
+      </form>
+
+      <div id="question-builder" class="hidden" aria-live="polite">
+        <h3>Question <span id="q-index">1</span></h3>
+        <label>
+          Question text
+          <textarea id="q-text" rows="2" required></textarea>
+        </label>
+        <div id="options-list">
+          <label>Option A <input class="q-opt" data-opt="0" /></label>
+          <label>Option B <input class="q-opt" data-opt="1" /></label>
+          <label>Option C <input class="q-opt" data-opt="2" /></label>
+          <label>Option D <input class="q-opt" data-opt="3" /></label>
+        </div>
+        <label>
+          Correct answer
+          <select id="q-correct">
+            <option value="0">A</option>
+            <option value="1">B</option>
+            <option value="2">C</option>
+            <option value="3">D</option>
+          </select>
+        </label>
+        <label>
+          Explanation (optional) — shown after answering
+          <input id="q-expl" />
+        </label>
+
+        <div class="builder-actions">
+          <button id="add-question" type="button">Add Question</button>
+          <button id="finish-quiz" type="button">Finish & Save Quiz</button>
+        </div>
+
+        <div id="created-questions" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Play / Take Quiz -->
+    <section id="play-section" class="panel hidden" aria-labelledby="play-title">
+      <h2 id="play-title">Take Quiz</h2>
+      <div id="quiz-list" aria-live="polite"></div>
+
+      <div id="quiz-run" class="hidden" aria-live="polite">
+        <h3 id="run-title"></h3>
+        <div id="timer" class="muted hidden" aria-hidden="true"></div>
+        <div id="question-area" role="region" aria-live="polite"></div>
+
+        <div id="run-controls" class="hidden">
+          <button id="prev-q">Previous</button>
+          <button id="next-q">Next</button>
+          <button id="submit-quiz">Submit Quiz</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scores -->
+    <section id="score-section" class="panel hidden" aria-labelledby="score-title">
+      <h2 id="score-title">Scores</h2>
+      <div id="score-list" aria-live="polite"></div>
+      <button id="clear-scores">Clear My Scores</button>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <small>QuizLab — accessible & responsive demo • Built with HTML/CSS/JS</small>
+  </footer>
+
+  <template id="quiz-card-template">
+    <article class="quiz-card">
+      <h4 class="qc-title"></h4>
+      <p class="qc-desc"></p>
+      <div class="qc-meta"></div>
+      <div class="qc-actions">
+        <button class="take-btn">Take</button>
+        <button class="edit-btn">Edit</button>
+        <button class="delete-btn">Delete</button>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

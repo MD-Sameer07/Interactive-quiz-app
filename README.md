@@ -5,29 +5,29 @@ A fully responsive, modern, and beginner-friendly Quiz Application built using H
 ⭐ Features 
 🔐 User Account System
 
-Register new users
+   Register new users
 
-Login with email & password
+  Login with email & password
 
-User session stored in browser
+  User session stored in browser
 
-Logout anytime
+  Logout anytime
 
-All data saved in localStorage
+  All data saved in localStorage
 
 📝 Create Quizzes
 
-Add quiz title, description, and time limit
+  Add quiz title, description, and time limit
 
-Add unlimited MCQ questions
+  Add unlimited MCQ questions
 
-Each question supports:
+  Each question supports:
 
-4 options (A–D)
+  4 options (A–D)
 
-Correct answer selection
+  Correct answer selection
 
-Optional explanation shown after answering
+  Optional explanation shown after answering
 
 Preview added questions
 
@@ -39,29 +39,29 @@ Stored automatically in localStorage
 
 ▶️ Take Quiz
 
-Clean, responsive quiz UI
+  Clean, responsive quiz UI
 
-Timer countdown with auto-submit
+  Timer countdown with auto-submit
 
-Previous & Next navigation
+  Previous & Next navigation
 
 Answer feedback:
 
-Correct answers highlighted
+  Correct answers highlighted
 
-Wrong answers highlighted
+  Wrong answers highlighted
 
-Explanation displayed
+  Explanation displayed
 
-Smooth transitions and accessible structure
+  Smooth transitions and accessible structure
 
 📊 Score Dashboard
 
-Stores score history per user
+  Stores score history per user
 
 Details saved:
 
-Total questions
+  Total questions
 
 Correct answers
 
@@ -75,15 +75,15 @@ Clear scores option available
 
 🎨 UI & Styling
 
-Modern, soft UI design
+  Modern, soft UI design
 
-Fully responsive for all screen sizes
+  Fully responsive for all screen sizes
 
-Smooth shadows, intuitive layout
+  Smooth shadows, intuitive layout
 
-Accessible with ARIA roles and keyboard support
+  Accessible with ARIA roles and keyboard support
 
-Works offline—no backend needed
+  Works offline—no backend needed
 
 🛠️ Tech Stack
 
@@ -106,9 +106,9 @@ LocalStorage API
 
 Download the project
 
-Open index.html in any browser
+ Open index.html in any browser
 
-Start creating or answering quizzes — no server needed
+ Start creating or answering quizzes — no server needed
 
 🌐 Optional: Host on GitHub Pages
 

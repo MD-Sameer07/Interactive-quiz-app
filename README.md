@@ -1,89 +1,131 @@
-# Interactive-quiz-app
-A fully interactive, responsive, and user-friendly Quiz Application built using HTML, CSS, and JavaScript. The app allows users to create quizzes, take quizzes, see instant feedback, track scores, and even register/login using browser localStorage (no backend needed).
-🚀 Features
+📚 Interactive Quiz App — QuizLab
+
+A fully responsive, modern, and beginner-friendly Quiz Application built using HTML, CSS, and JavaScript, with full quiz creation, user login, score history, and localStorage support.
+
+⭐ Features (Bullet Points)
 🔐 User Account System
 
-Register & Login using localStorage
+Register new users
 
-View profile details
+Login with email & password
+
+User session stored in browser
 
 Logout anytime
 
-📝 Quiz Creator
+All data saved in localStorage
 
-Create quizzes with:
+📝 Create Quizzes
 
-Title, Description & Time Limit
+Add quiz title, description, and time limit
 
-Multiple-choice questions (4 options each)
+Add unlimited MCQ questions
+
+Each question supports:
+
+4 options (A–D)
 
 Correct answer selection
 
-Optional explanations
+Optional explanation shown after answering
+
+Preview added questions
 
 Edit existing quizzes
 
 Delete quizzes
 
-Fully stored in localStorage
+Stored automatically in localStorage
 
 ▶️ Take Quiz
 
-Clean & responsive UI
+Clean, responsive quiz UI
 
-Timer support
+Timer countdown with auto-submit
 
-Instant correct/wrong highlighting
+Previous & Next navigation
 
-Explanations after each question
+Answer feedback:
 
-Navigation (Previous/Next)
+Correct answers highlighted
+
+Wrong answers highlighted
+
+Explanation displayed
+
+Smooth transitions and accessible structure
 
 📊 Score Dashboard
 
-Score history saved per user
+Stores score history per user
 
-Percentage calculation
+Details saved:
 
-Time-stamped results
+Total questions
 
-Clear score data with one click
+Correct answers
 
-🎨 UI Highlights
+Percentage
 
-Modern and clean layout
+Quiz title
 
-Mobile-friendly responsive design
+Date & time
 
-Accessible navigation & ARIA roles
+Clear scores option available
 
-Soft shadows, gradients & smooth visuals
+🎨 UI & Styling
 
-🛠️ Technologies Used
+Modern, soft UI design
+
+Fully responsive for all screen sizes
+
+Smooth shadows, intuitive layout
+
+Accessible with ARIA roles and keyboard support
+
+Works offline—no backend needed
+
+🛠️ Tech Stack
 
 HTML5
 
-CSS3 (Custom styling + responsive layout)
+CSS3
 
 Vanilla JavaScript
 
 LocalStorage API
 
-📁 Project Structure
+📂 Project Structure
 /QuizLab
 │── index.html
 │── styles.css
 │── app.js
 │── README.md
 
-▶️ How to Run
+▶️ How to Run Locally
 
-Download or clone the repository
+Download the project
 
 Open index.html in any browser
 
-Start creating or taking quizzes!
+Start creating or answering quizzes — no server needed
 
-🤝 Contributions
+🌐 Optional: Host on GitHub Pages
 
-Feel free to submit issues or pull requests to improve features or UI.
+Push project to GitHub
+
+Go to Repository Settings
+
+Select Pages
+
+Choose main branch → root
+
+Your quiz app will be live online!
+
+🤝 Contribution
+
+Feel free to contribute, report bugs, or request features.
+
+⭐ Show Support
+
+If you like this project, please star the repository!
